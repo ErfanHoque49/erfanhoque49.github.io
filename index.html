@@ -1,1 +1,153 @@
-Test Hello World!
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dr. Erfanul Haque - profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            scroll-behavior: smooth;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: left;
+        }
+        nav {
+            background-color: #34495e;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: green;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #34495e;
+            color: white;
+        }
+        .active {
+            background-color: #34495e;
+            color: black !important;
+        }
+        .container {
+            display: flex;
+            height: calc(100vh - 140px);
+            background-color: white;
+        }
+        .sidebar {
+            width: 30%;
+            background-color: #f4f4f4;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            border-right: 1px solid #ccc;
+        }
+        .sidebar img {
+            width: 80%;
+            border-radius: 10px;
+        }
+        .sidebar h2 {
+            margin-top: 20px;
+            color: #003366;
+        }
+        .sidebar p {
+            margin: 5px 0;
+            color: #333;
+        }
+        .main-content {
+            width: 70%;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow-y: auto;
+            background-color: white;
+        }
+        section {
+            padding: 20px 0;
+        }
+        ul.skills {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        ul.skills li {
+            background-color: #ecf0f1;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
+        }
+        .tab-section {
+            display: none;
+        }
+        .tab-section.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dr. Erfanul Hoque (he/him) MSc, PhD</h1>
+        <p>Assistant Professor Community Health and Epidemiology</p>
+    </header>
+
+    <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="publication.html">Publication</a>
+    <a href="awards.html">Awards/Grants</a>
+    </nav>
+
+    <div class="container">
+        <div class="sidebar">
+            <img src="erfanul-hoque.jpg" alt="Profile Image">
+            <h2>Contact</h2>
+            <p>Email: erfan.hoque@usask.ca</p>
+            <p>Location: Saskatoon, SK, Canada</p>
+            <p>
+                <a href="index.html">LinkedIn</a> |
+                <a href="index.html">ResearchGate</a> |
+                <a href="index.html">GitHub</a>
+            </p>
+        </div>
+
+        <div class="main-content">
+            <section>
+                <h2>Professional Summary</h2>
+                <p style="text-align: justify;">Dr. Erfan Hoque is an Assistant Professor in the Department of Community 
+                Health and Epidemiology at the University of Saskatchewan. He holds a PhD in 
+                Statistics from the University of Manitoba, where he received the Outstanding 
+                Academic Performance by a Ph.D. Student award for his research work. He 
+                specializes in biostatistics, with expertise in longitudinal data analysis, 
+                time series modeling, statistical machine learning, dynamic data science, 
+                copulas and missing data analysis.</p>
+                <p style="text-align: justify;">Erfan’s research interest focuses on the methodological developments in 
+                heterogeneous dependence modeling in multivariate data, primarily focusing 
+                on developing innovative statistical/biostatistical models and methods for 
+                complex and correlated data to address health issues related to communicable 
+                and non-communicable diseases. He is also working on interdisciplinary areas 
+                such as public health and medicine, genomics, computational finance, transportation, 
+                electricity demand, supply chain management etc.</p>
+                <p style="text-align: justify;">Erfan has published in prestigious journals such as Biometrics, Statistics in 
+                Medicine and Canadian Journal of Statistics and presented his work at numerous 
+                national and international conferences. He is also a dedicated educator and mentor, 
+                supervising graduate students and fostering interdisciplinary collaborations 
+                to advance statistical methods for real-world applications. He has also been 
+                actively involved in organizing conferences, reviewing for journals, and 
+                participating in professional associations. He enjoys his free time 
+                playing cricket and football and spending time with his family.</p>
+            </section>
+</body>
+</html>
